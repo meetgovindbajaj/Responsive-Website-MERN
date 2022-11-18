@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.nbar {
+    width: 100%;
+    height: 8vh;
+}
+
+.aa img {
+    pointer-events: none;
+}
+
+.navbar {
+    background-color: rgb(244, 244, 248) !important;
+}
+
+.navbar .container .navbar-brand {
+    color: rgb(0, 140, 255) !important;
+    transition: all 0.3s linear;
+}
+
+.navbar .container .navbar-brand:hover {
+    color: rgb(0, 112, 204) !important;
+}
+
+.navbar .container .navbar-toggler {
+    background-color: rgb(0, 140, 255) !important;
+}
+
+.nav-link {
+    color: black !important;
+    position: relative;
+    transition: 0.3s linear;
+    font-weight: 500;
+}
+
+.nav-link:hover,
+.coll:hover h2 {
+    color: rgb(0, 140, 255) !important;
+}
+
+.sudo::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: 50% 50%;
+    width: 85%;
+    height: 2.5px;
+    color: rgb(0, 140, 255) !important;
+    background-color: rgb(0, 140, 255);
+    transition: 0.3s linear;
+}
+
+.sudo:hover:after {
+    transform: translateX(-50%) scaleX(1);
+}
+
+@media (min-width:501px) and (max-width:990px) {
+    .sudo::after {
+        width: 10%;
+    }
+}
+
+@media (max-width:500px) {
+    .sudo::after {
+        width: 30%;
+    }
+}

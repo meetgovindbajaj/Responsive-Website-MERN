@@ -1,0 +1,372 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contact_info {
+    width: 100%;
+    min-height: 18vh;
+    margin: 8vh 0 0 0;
+}
+
+.contact_info_item {
+    width: 27%;
+    min-height: 10vh;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 4px 5px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 0 15px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.35s linear;
+}
+
+.contact_info_item:hover {
+    background-color: rgba(252, 252, 252, .5);
+    border-color: rgba(0, 0, 0, 0.2);
+}
+
+.contact_info_item:hover .contact_info_title {
+    color: rgb(0, 140, 255);
+}
+
+.contact_info_item:hover .contact_info_text {
+    color: rgba(0, 110, 255, 0.5);
+}
+
+.contact_info_content {
+    width: 100%;
+    height: auto;
+    padding-left: 10px;
+}
+
+.contact_info_title {
+    font-weight: 900;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    transition: all 0.35s linear;
+}
+
+.contact_info_text {
+    font-weight: lighter;
+    font-size: 1.6vh;
+    color: rgba(87, 87, 87, 0.7);
+    transition: all 0.35s linear;
+}
+
+.contact-form {
+    width: 100%;
+    /* min-height: 60vh; */
+}
+
+.contact_form_container {
+    width: 100%;
+    min-height: 60vh;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 7px 13px 5px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    text-align: start;
+    padding: 30px 70px !important;
+}
+
+.contact_form_title {
+    font-size: 25px;
+    padding: 0 0 25px 0;
+}
+
+.input_field {
+    border: 1.8px solid rgba(0, 0, 0, 0.1);
+    width: 30%;
+    border-radius: 5px;
+    height: 2.4rem;
+    padding: 5px;
+    outline: none;
+    color: rgba(0, 110, 255, .7);
+    position: relative;
+}
+
+.text_field {
+    width: 100%;
+    border: 1.8px solid rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+    padding: 7px;
+    margin-top: 30px;
+    outline: none;
+    color: rgba(0, 110, 255, .7);
+}
+
+.contact_submit_button {
+    margin-top: 10px;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 5.5px;
+    background-color: black;
+    color: white;
+    text-transform: capitalize;
+    transition: 0.3s linear;
+    font-weight: bolder;
+}
+
+.contact_submit_button:hover {
+    box-sizing: border-box;
+    background-color: rgb(0, 110, 255);
+    box-shadow: 0 0 7px 2px rgba(0, 110, 255, .5);
+}
+
+::placeholder {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.input_field:focus+.floating-label1,
+.input_field:not(:placeholder-shown)+.floating-label1 {
+    top: 83px;
+    display: inline-block;
+    left: 100px;
+    background-color: white;
+    color: rgb(0, 140, 255);
+    font-size: 12px;
+    opacity: 1;
+}
+
+.input_field:focus+.floating-label2,
+.input_field:not(:placeholder-shown)+.floating-label2 {
+    top: 83px;
+    display: inline-block;
+    background-color: white;
+    left: 39%;
+    color: rgb(0, 140, 255);
+    font-size: 12px;
+    opacity: 1;
+}
+
+.input_field:focus+.floating-label3,
+.input_field:not(:placeholder-shown)+.floating-label3 {
+    top: 83px;
+    display: inline-block;
+    background-color: white;
+    left: 68%;
+    color: rgb(0, 140, 255);
+    font-size: 12px;
+    opacity: 1;
+}
+
+.text_field:focus+.floating-label4,
+.text_field:not(:placeholder-shown)+.floating-label4 {
+    top: 152px;
+    left: 100px;
+    display: inline-block;
+    background-color: white;
+    color: rgb(0, 140, 255);
+    font-size: 13px;
+    opacity: 1;
+}
+
+.input_field:focus,
+.text_field:focus {
+    border-color: rgb(0, 140, 255);
+}
+
+.floating-label1,
+.floating-label2,
+.floating-label3,
+.floating-label4 {
+    position: absolute;
+    pointer-events: none;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5);
+    transition: all 0.3s linear;
+}
+
+.floating-label1 {
+    top: 100px;
+    left: 100px;
+}
+
+.floating-label2 {
+    top: 100px;
+    left: 39%;
+}
+
+.floating-label3 {
+    top: 100px;
+    left: 68%;
+}
+
+.floating-label4 {
+    top: 170px;
+    left: 100px;
+}
+
+@media (min-width:950px) and (max-width:1100px) {
+    .contact_info_item {
+        width: 90%;
+        margin: 0 10px;
+    }
+}
+
+@media (min-width:765px) and (max-width:950px) {
+    .info {
+        display: block !important;
+    }
+
+    .contact_info_item {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 15px auto;
+    }
+}
+
+@media (min-width:0px) and (max-width:765px) {
+
+    .info,
+    .frrm {
+        display: block !important;
+    }
+
+    .contact_info_item {
+        width: 100%;
+        margin: 15px auto;
+    }
+
+    .input_field {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+}
+
+@media (max-width:400px) {
+    .contact_form_container {
+        padding: 30px 40px !important;
+    }
+}
+
+@media (max-width:765px) {
+
+    .input_field:focus+.floating-label1,
+    .input_field:not(:placeholder-shown)+.floating-label1 {
+        top: 89px;
+        left: 95px;
+    }
+
+    .input_field:focus+.floating-label2,
+    .input_field:not(:placeholder-shown)+.floating-label2 {
+        top: 138px;
+        left: 95px;
+    }
+
+    .input_field:focus+.floating-label3,
+    .input_field:not(:placeholder-shown)+.floating-label3 {
+        top: 186px;
+        left: 95px;
+    }
+
+    .text_field:focus+.floating-label4,
+    .text_field:not(:placeholder-shown)+.floating-label4 {
+        top: 258px;
+        left: 95px;
+    }
+
+    .floating-label1 {
+        top: 106px;
+        left: 95px;
+    }
+
+    .floating-label2 {
+        top: 156px;
+        left: 95px;
+    }
+
+    .floating-label3 {
+        top: 202px;
+        left: 95px;
+    }
+
+    .floating-label4 {
+        top: 275px;
+        left: 95px;
+    }
+}
+
+@media (max-width:400px) {
+
+    .input_field:focus+.floating-label1,
+    .input_field:not(:placeholder-shown)+.floating-label1 {
+        left: 70px;
+    }
+
+    .input_field:focus+.floating-label2,
+    .input_field:not(:placeholder-shown)+.floating-label2 {
+        left: 70px;
+    }
+
+    .input_field:focus+.floating-label3,
+    .input_field:not(:placeholder-shown)+.floating-label3 {
+        left: 70px;
+    }
+
+    .text_field:focus+.floating-label4,
+    .text_field:not(:placeholder-shown)+.floating-label4 {
+        left: 70px;
+    }
+
+    .floating-label1 {
+        left: 70px;
+    }
+
+    .floating-label2 {
+        left: 70px;
+    }
+
+    .floating-label3 {
+        left: 70px;
+    }
+
+    .floating-label4 {
+        left: 70px;
+    }
+}
+
+@media (max-width:289px) {
+
+    .input_field:focus+.floating-label1,
+    .input_field:not(:placeholder-shown)+.floating-label1 {
+        top: 126px;
+    }
+
+    .input_field:focus+.floating-label2,
+    .input_field:not(:placeholder-shown)+.floating-label2 {
+        top: 174px;
+    }
+
+    .input_field:focus+.floating-label3,
+    .input_field:not(:placeholder-shown)+.floating-label3 {
+        top: 222px;
+    }
+
+    .text_field:focus+.floating-label4,
+    .text_field:not(:placeholder-shown)+.floating-label4 {
+        top: 295px;
+    }
+
+    .floating-label1 {
+        top: 146px;
+    }
+
+    .floating-label2 {
+        top: 190px;
+    }
+
+    .floating-label3 {
+        top: 238px;
+    }
+
+    .floating-label4 {
+        top: 315px;
+    }
+}

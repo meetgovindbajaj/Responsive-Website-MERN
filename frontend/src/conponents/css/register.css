@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(244, 244, 248);
+}
+
+section {
+    width: 100%;
+    padding-top: 10vh;
+    min-height: 92vh;
+    display: flex;
+    justify-content: center;
+}
+
+.signup .signup-content {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    height: 62vh;
+    border: none;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 10px 15px 5px rgba(0, 0, 0, 0.7);
+    background-color: white;
+    overflow: hidden;
+}
+
+.signup-form {
+    width: 50%;
+    height: inherit;
+    background-color: white;
+    text-align: center;
+}
+
+.signup-image {
+    width: 50%;
+    height: inherit;
+    background-color: white;
+    text-align: center;
+}
+
+.form-title {
+    font-weight: bolder !important;
+    background-color: white;
+    height: 8vh;
+    text-transform: capitalize;
+}
+
+.form-group {
+    background-color: white;
+    position: relative;
+}
+
+.form-group label i,
+.form-group label {
+    background-color: white !important;
+    padding-right: 5px;
+}
+
+.inputText:focus+.floating-label,
+.inputText:not(:placeholder-shown)+.floating-label {
+    top: -18px;
+    background-color: white;
+    left: 80px;
+    color: rgb(0, 140, 255);
+    font-size: 12px;
+    opacity: 1;
+}
+
+.form-group .inputText {
+    display: inline-block;
+    background-color: white;
+    color: hsl(204, 100%, 50%);
+    padding-left: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    transition: 0.3s linear !important;
+}
+
+.form-group .inputText:focus {
+    border-color: rgb(0, 140, 255);
+    border-width: medium medium 2px;
+}
+
+.form-group .floating-label {
+    position: absolute;
+    pointer-events: none;
+    top: 2px;
+    left: 80px;
+    font-size: 16px;
+    color: rgb(138, 127, 127);
+    transition: all 0.3s linear;
+}
+
+.inputButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    text-transform: capitalize;
+    transition: 0.3s linear;
+    font-weight: bolder;
+}
+
+.inputButton:hover {
+    box-sizing: border-box;
+    background-color: rgb(0, 110, 255);
+    box-shadow: 0 0 10px 3px rgba(0, 110, 255, 0.5);
+}
+
+.signup-image figure img {
+    height: 45vh;
+    width: 100%;
+    background-color: white !important;
+}
+
+.signup-image-link {
+    text-decoration: none !important;
+    color: gray;
+    font-size: 14px;
+    transition: 0.3s linear;
+}
+
+.signup-image1-link {
+    display: none;
+}
+
+.signup-image-link:hover {
+    color: rgb(0, 110, 255);
+}
+
+@media (max-width:600px) {
+    .signup-image1-link {
+        display: block;
+        text-decoration: none !important;
+        color: gray;
+        font-size: 14px;
+        transition: 0.3s linear;
+    }
+
+    .signup-image1-link:hover {
+        color: rgb(0, 110, 255);
+    }
+    .signup .signup-content {
+        box-shadow: 0 0px 5px 5px rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media (max-width:1350px) and (min-width:1150px) {
+    .signup .signup-content {
+        width: 60% !important;
+    }
+}
+
+@media (max-width:1149px) and (min-width:950px) {
+    .signup .signup-content {
+        width: 70% !important;
+    }
+}
+
+@media (max-width:949px) and (min-width:750px) {
+    .signup .signup-content {
+        width: 80% !important;
+    }
+}
+
+@media (max-width:749px) and (min-width:600px) {
+    .signup .signup-content {
+        width: 95% !important;
+    }
+}
+
+@media (max-width:599px) and (min-width:317px) {
+    section {
+        padding-top: 3vh;
+    }
+
+    .signup .signup-content {
+        width: 97% !important;
+        height: 75vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .signup-image {
+        display: none;
+    }
+
+    .signup-form {
+        width: auto;
+        height: auto;
+    }
+
+    .form-group .floating-label {
+        left: 35px;
+    }
+
+    .inputText:focus+.floating-label,
+    .inputText:not(:placeholder-shown)+.floating-label {
+        left: 35px;
+    }
+}
+
+@media (max-width:316px) {
+    section {
+        padding-top: 1vh;
+    }
+
+    .signup .signup-content {
+        width: 97% !important;
+        height: 90vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .signup-image {
+        display: none;
+    }
+
+    .signup-form {
+        width: auto;
+        height: auto;
+    }
+
+    .inputText {
+        width: 80%;
+    }
+
+    .form-group .floating-label {
+        left: 35px;
+    }
+
+    .inputText:focus+.floating-label,
+    .inputText:not(:placeholder-shown)+.floating-label {
+        left: 35px;
+    }
+}

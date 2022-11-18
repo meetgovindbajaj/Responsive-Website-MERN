@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.emp-profile {
+    background-color: white;
+    border: none;
+    margin: 7vh auto;
+    border-radius: 15px;
+    width: 55%;
+    min-height: 70vh;
+    padding: 5vh 9vh;
+    box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.5);
+}
+
+.image {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 3px 5px 2px rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+}
+
+.images {
+    position: relative;
+}
+
+.profile-head h5 {
+    font-weight: bolder;
+    text-transform: capitalize;
+}
+
+.profile-head h6 {
+    font-size: 0.9em;
+    color: rgb(0, 119, 255);
+}
+
+.profile-head p {
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 3px 0;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.profile-head p span {
+    color: black;
+    font-size: 0.8rem;
+}
+
+.profile-edit-btn {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: rgba(0, 0, 0, 0.6);
+    border: none;
+    border-radius: 10px;
+    padding: 5px 7px;
+    font-size: 0.9rem;
+    margin-bottom: 45px;
+    transition: 0.2s linear;
+}
+
+.profile-edit-btn:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.profile-work {
+    padding-top: 20px;
+}
+
+.profile-work a,
+.a {
+    color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+    transition: 0.2s linear;
+    font-size: 0.8rem;
+}
+
+.a {
+    cursor: pointer;
+    line-height: .5;
+}
+
+.a1 {
+    line-height: 1.8;
+}
+
+.profile-work a:hover,
+.a:hover {
+    color: rgb(0, 119, 255);
+}
+
+.profile-work p {
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 0.9rem;
+}
+
+.m-auto p {
+    color: rgb(0, 119, 255);
+}
+
+.u {
+    margin-top: 15px !important;
+}
+
+.emp-profile#blur.active {
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+}
+
+#popup {
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    margin-top: 3vh;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 83vh;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    border-radius: 20px;
+    visibility: hidden;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.3s linear;
+}
+
+#popup.active {
+    top: 50%;
+    visibility: visible;
+    z-index: 99;
+    opacity: 1;
+}
+
+.inputButton {
+    margin: 0 5px;
+}
+
+.edit-profile {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.edit-profile form {
+    padding: 5vh;
+}
+
+.form-title1 {
+    line-height: 10vh;
+    padding: 10px 0;
+}
+
+.form-group .label {
+    min-width: 45%;
+    font-size: 18px;
+    text-align: left;
+    padding-left: 10%;
+}
+
+.form-group .inputText1 {
+    width: 40%;
+    font-size: 18px;
+}
+@media (max-width:1300px) {
+    .emp-profile {
+        width: 75%;
+    }
+    #popup{
+        width: 98%;
+        overflow: auto;
+    }
+    .edit-profile {
+        height: auto;
+        overflow: auto;
+    }
+    .form-group .label {
+        min-width: 45%;
+        font-size: 12px;
+        text-align: left;
+        padding-left: 1%;
+    }
+    
+    .form-group .inputText1 {
+        width: 51%;
+        font-size: 18px;
+    }
+}
+
+@media (max-width:990px) {
+    .images {
+        justify-content: center !important;
+    }
+
+    .emp-profile {
+        width: 95%;
+        padding: 5vh 7vh;
+    }
+}
+
+@media (max-width:770px) {
+    .emp-profile {
+        box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
+    }
+
+    .profile-head {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .profile-head h5 {
+        font-weight: bolder;
+        text-transform: capitalize;
+    }
+
+    .profile-head h6 {
+        font-size: 0.9em;
+        color: rgb(0, 119, 255);
+    }
+
+    .profile-head p {
+        font-size: 0.7rem;
+        font-weight: bold;
+        padding: 3px 0;
+        color: rgba(0, 0, 0, 0.5);
+    }
+
+    .profile-works {
+        display: none;
+    }
+
+    .xx {
+        display: block !important;
+    }
+
+    .xx a {
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width:576px) {
+    .u1 {
+        margin-top: 15px !important;
+    }
+}
+
+@media (max-width:300px) {
+    .emp-profile {
+        width: 98%;
+        padding: 5vh 2.5vh;
+        box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.1);
+    }
+}

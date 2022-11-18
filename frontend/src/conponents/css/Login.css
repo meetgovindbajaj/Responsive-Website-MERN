@@ -1,0 +1,9 @@
+@media (min-width:599px) {
+    .login-form{
+        margin-top: 8vh !important;
+    }
+    .login-reg{
+        margin-top: 6vh !important;
+        line-height: 1.6rem;
+    }
+}
